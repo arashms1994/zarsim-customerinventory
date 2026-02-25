@@ -56,6 +56,8 @@ export function InventoryTable({ data, isInitialLoad }: IInventoryTableProps) {
   const filteredAndSortedData = useMemo(() => {
     let result = [...data];
 
+    result = result.filter((row) => row.Mandeh_T !== 0);
+
     if (search.trim()) {
       const q = search.trim().toLowerCase();
       result = result.filter(
