@@ -29,3 +29,6 @@ getData.ts
 getDigest.ts
 authentication.ts
 useApi.ts
+
+# documentation
+docs.md
